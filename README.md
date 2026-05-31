@@ -128,6 +128,7 @@ Principais relacionamentos:
 - Cada avaliação armazena as notas das categorias definidas.
 
 O Diagrama Entidade-Relacionamento (ER) pode ser encontrado neste repositório.
+![Diagrama](schema.png)
 
 ---
 

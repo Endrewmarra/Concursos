@@ -1,0 +1,32 @@
+{
+    "name": "Endrew Marra Pedrosa",
+    "character": "Edward Elrick",
+    "from":"Full Metal alchemist",
+    "referenceImages": [
+        {
+            "src": "https://picsum.photos/seed/img1/1280/720",
+            "alt": "descrição da imagem 1"
+        },
+        {
+            "src": "https://picsum.photos/seed/img2/3840/2160",
+            "alt": "descrição da imagem 2"
+        },
+        {
+            "src": "https://picsum.photos/seed/img3/1600/900",
+            "alt": "descrição da imagem 3"
+        },
+        {
+            "src": "https://picsum.photos/seed/img4/2560/1080",
+            "alt": "descrição da imagem 3"
+        },
+        {
+            "src": "https://picsum.photos/seed/img5/1920/1080",
+            "alt": "descrição da imagem 3"
+        }
+        ,
+        {
+            "src": "https://picsum.photos/seed/img6/1000/500",
+            "alt": "descrição da imagem 3"
+        }
+    ]
+}

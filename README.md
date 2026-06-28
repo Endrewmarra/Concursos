@@ -1,101 +1,27 @@
-# Sistema de Avaliação para Concursos de Cosplay
+# COSPLAY-SCORE-SYSTEM
 
-## Sobre o Projeto
+Sistema para gerenciamento e apuração de concursos de cosplay em tempo real.
 
-O Sistema de Avaliação para Concursos de Cosplay é uma aplicação em desenvolvimento que tem como objetivo digitalizar e automatizar o processo de avaliação utilizado em concursos de cosplay realizados em eventos geek.
+## Sobre o projeto
 
-O projeto surgiu a partir da necessidade de substituir processos manuais baseados em fichas impressas, anotações físicas e planilhas eletrônicas, proporcionando maior agilidade, organização e confiabilidade durante a apuração dos resultados.
+Este projeto surgiu da necessidade de substituir o processo manual de avaliação utilizado em concursos de cosplay por uma solução simples, rápida e intuitiva.
 
-Inicialmente o sistema está sendo desenvolvido para atender eventos da região de Presidente Prudente e Martinópolis, mas sua estrutura foi planejada para permitir adaptação a diferentes tipos de concursos.
+O objetivo é permitir que administradores organizem eventos, acompanhem a classificação em tempo real e que jurados realizem suas avaliações através de uma interface dedicada.
 
----
+O sistema está sendo desenvolvido inicialmente como um **MVP (Minimum Viable Product)** para utilização em eventos presenciais, priorizando simplicidade, rapidez e confiabilidade.
 
-## Problema Atual
-
-Atualmente o processo de avaliação apresenta algumas limitações:
-
-- Utilização de fichas impressas para avaliação;
-- Necessidade de impressão das referências dos candidatos;
-- Risco de perda ou extravio das fichas;
-- Dificuldade de leitura de anotações manuais;
-- Processo manual de lançamento das notas em planilhas;
-- Possibilidade de erros humanos durante cálculos e classificações;
-- Maior tempo para divulgação dos resultados;
-- Dependência de trabalho operacional durante o evento.
+Nesta primeira versão todo o sistema funcionará em rede local.
 
 ---
 
-## Solução Proposta
+## Objetivos
 
-O sistema pretende centralizar todo o processo de avaliação em uma única plataforma.
-
-Os jurados poderão acessar o sistema através de seus próprios dispositivos móveis e registrar as notas digitalmente durante as apresentações.
-
-A plataforma será responsável por:
-
-- Gerenciar eventos;
-- Gerenciar jurados;
-- Gerenciar candidatos;
-- Armazenar referências dos personagens;
-- Registrar avaliações;
-- Calcular médias automaticamente;
-- Gerar classificações automaticamente;
-- Disponibilizar os resultados para os organizadores.
-
-A primeira versão foi planejada para funcionar inteiramente em rede local, sem necessidade de acesso à internet.
-
----
-
-## Planejamento do Projeto
-
-### Fase 1 — Modelagem
-
-- [x] Levantamento inicial de requisitos
-- [x] Definição das regras de negócio
-- [x] Modelagem do banco de dados
-- [x] Diagrama Entidade-Relacionamento (ER)
-- [x] Estrutura SQL inicial
-
-### Fase 2 — Backend
-
-- [ ] Configuração do ambiente
-- [ ] Implementação da autenticação
-- [ ] CRUD de usuários
-- [ ] CRUD de eventos
-- [ ] CRUD de candidatos
-- [ ] CRUD de jurados
-- [ ] Sistema de avaliações
-- [ ] Sistema de classificação
-
-### Fase 3 — Interface
-
-- [ ] Tela de login
-- [ ] Painel administrativo
-- [ ] Tela de avaliação dos jurados
-- [ ] Visualização de candidatos
-- [ ] Exibição de resultados
-
-### Fase 4 — Melhorias Futuras
-
-- [ ] Inscrição online de candidatos
-- [ ] Cadastro online de jurados
-- [ ] Histórico de eventos
-- [ ] Consulta pública de resultados
-- [ ] Hospedagem online
-
----
-
-## Situação Atual
-
-Atualmente apenas a modelagem do banco de dados foi concluída.
-
-O repositório contém:
-
-- Estrutura SQL inicial;
-- Diagrama do banco de dados;
-- Documentação inicial do projeto.
-
-As próximas etapas serão a implementação da API e da camada de autenticação.
+- Digitalizar o processo de avaliação.
+- Reduzir erros de cálculo.
+- Atualizar a classificação em tempo real.
+- Centralizar todas as notas em um único sistema.
+- Facilitar alterações de notas quando autorizadas pelo administrador.
+- Gerar automaticamente a classificação final.
 
 ---
 
@@ -105,48 +31,79 @@ As próximas etapas serão a implementação da API e da camada de autenticaçã
 
 - MySQL
 
----
+### Front-end _(em desenvolvimento)_
 
-## Estrutura Inicial do Banco
+- React
 
-O banco foi modelado para representar:
+### Back-end _(planejado)_
 
-- Usuários;
-- Eventos;
-- Administradores;
-- Jurados;
-- Candidatos;
-- Avaliações.
-
-Principais relacionamentos:
-
-- Um evento possui vários candidatos;
-- Um evento possui vários jurados;
-- Um evento possui vários administradores;
-- Um candidato pertence a um evento;
-- Um jurado pode avaliar vários candidatos;
-- Cada avaliação armazena as notas das categorias definidas.
-
-O Diagrama Entidade-Relacionamento (ER) pode ser encontrado neste repositório.
-![Diagrama](schema.png)
+- Python
+- FastAPI
 
 ---
 
-## Possíveis Funcionalidades Futuras
+## Estrutura do projeto
 
-- Sistema de inscrições online;
-- Cadastro de jurados por convite;
-- Gestão de múltiplos eventos simultaneamente;
-- Histórico completo de participações;
-- Exportação de resultados;
-- Dashboard administrativo;
-- Hospedagem em nuvem;
-- Consulta pública de resultados.
+```text
+database/
+    Banco de dados, diagrama e scripts SQL.
+
+frontend/
+    Interface desenvolvida em React.
+
+backend/
+    API responsável pela comunicação entre interface e banco de dados.
+
+docs/
+    Documentação do projeto.
+```
 
 ---
 
-## Autor
+## Situação atual
 
-**Endrew Marra**
+- ✅ Modelagem do banco de dados
+- ✅ Banco implementado em MySQL
+- ✅ Protótipos das telas
+- ✅ Interface inicial em React
+- 🚧 Desenvolvimento do Front-end
+- ⏳ Desenvolvimento da API
+- ⏳ Comunicação em tempo real
+- ⏳ Exportação de resultados
 
-Projeto em desenvolvimento voltado para a digitalização e modernização do processo de avaliação em concursos de cosplay.
+---
+
+## Funcionalidades planejadas
+
+### Administrador
+
+- Criar concursos
+- Selecionar candidatos participantes
+- Definir ordem das apresentações
+- Avançar candidato atual
+- Visualizar classificação em tempo real
+- Alterar notas quando necessário
+- Encerrar concurso
+- Exportar resultado final
+
+### Jurado
+
+- Login
+- Visualizar candidato atual
+- Navegar pelas imagens de referência
+- Atribuir notas
+- Enviar avaliação
+
+---
+
+## Licença e uso
+
+Este projeto é disponibilizado publicamente para fins de portfólio, estudo e demonstração do desenvolvimento.
+
+Todos os direitos sobre o código-fonte, documentação, marca, identidade visual e demais materiais do projeto são reservados ao autor.
+
+Não é permitido copiar, modificar, distribuir, sublicenciar, vender ou utilizar este projeto, total ou parcialmente, para fins comerciais sem autorização prévia e expressa do autor.
+
+Copyright (c) 2026 Endrew Marra. Todos os direitos reservado
+
+Este projeto está licenciado sob a licença MIT.

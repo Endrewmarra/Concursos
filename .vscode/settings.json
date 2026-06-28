@@ -1,0 +1,71 @@
+{
+    // ===== CODESPELLING =====
+    "cSpell.language": "pt,pt-BR,en",
+    "cSpell.enabledFileTypes": {
+        "markdown": true,
+        "json": true,
+        "typescript": true,
+        "javascript": true,
+        "typescriptreact": true,
+        "javascriptreact": true
+    },
+    "cSpell.words": [
+        "brazilian",
+        "CODESPELLING",
+        "dbaeumer",
+        "esbenp",
+        "FastAPI",
+        "kohler",
+        "MySQL",
+        "npm",
+        "oderwat",
+        "Prettier",
+        "React",
+        "tsx",
+        "Vite",
+        "vercel",
+        "yoavbls"
+    ],
+
+    // ===== ORGANIZAÇÃO DE CÓDIGO =====
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit",
+        "source.organizeImports": "explicit"
+    },
+
+    // ===== ARQUIVOS =====
+    "files.eol": "\n",
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+
+    // ===== EDITOR =====
+    "editor.tabSize": 4,
+    "editor.wordWrap": "on",
+    "editor.wordWrapColumn": 100,
+    "editor.rulers": [100],
+
+    // ===== AUTO SAVE =====
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 500,
+
+    // ===== FORMATAÇÃO =====
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+    // ===== PRETTIER =====
+    "prettier.useTabs": false,
+    "prettier.tabWidth": 4,
+    "prettier.singleQuote": true,
+    "prettier.trailingComma": "all",
+    "prettier.semi": true,
+    "prettier.printWidth": 100,
+
+    // ===== ESLINT =====
+    "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+
+    // ===== TYPESCRIPT =====
+    "js/ts.preferences.importModuleSpecifier": "relative",
+
+    // ===== EXPLORER =====
+    "explorer.compactFolders": false
+}

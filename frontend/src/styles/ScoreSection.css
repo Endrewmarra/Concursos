@@ -1,0 +1,151 @@
+.score-section {
+    width: 100%;
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    min-width: 0;
+    min-height: 0;
+    overflow: hidden;
+}
+.candidate {
+    background-color: rgba(255, 255, 255, 0.263);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    min-width: 0;
+
+}
+
+.candidate h1,
+.candidate h2 {
+    overflow-wrap: anywhere;
+    line-height: 1.1;
+}
+
+.candidate h1 {
+    font-size: clamp(1.35rem, 4vw, 2rem);
+}
+
+.candidate h2 {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgba(255, 255, 255, 0.263);
+    border-radius: 0.5rem;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 0.5rem;
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow: hidden;
+}
+
+.score-fields {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(3.5rem, 1fr));
+    gap: 0.75rem;
+    padding: 0.75rem;
+
+}
+
+.score-field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    min-width: 0;
+    text-align: center;
+    font-weight: 700;
+}
+
+.score-field span {
+    overflow-wrap: anywhere;
+}
+
+.score-field input {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    font-size: larger;
+    text-align: center;
+    font-weight: 900;
+    border: 2px solid rgba(0, 0, 0, 0.781);
+    box-shadow: 0 0 5px white;
+}
+.enviar {
+    border-radius: 0.5rem;
+    width: 5rem;
+    height: 2rem;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.334);
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+    border: none;
+    box-shadow: 0 0 5px black;
+}
+.enviar:hover {
+    background-color: rgba(255, 255, 255, 0.334);
+    color: rgb(0, 0, 0);
+    transition: 0.2s;
+}
+.enviar:active {
+    background-color: rgba(255, 255, 255, 0.705);
+    color: rgb(0, 0, 0);
+    transition: 0.1s;
+}
+
+@media (max-width: 360px) {
+    .score-fields {
+        gap: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    .score-field input {
+        width: 2.75rem;
+        height: 2.75rem;
+    }
+}
+
+@media (max-height: 640px) {
+    .score-section {
+        gap: 0.35rem;
+    }
+
+    .candidate {
+        padding: 0.6rem;
+    }
+
+    .score {
+        gap: 0.45rem;
+        padding-bottom: 0.4rem;
+    }
+
+    .score-fields {
+        gap: 0.45rem;
+        padding: 0.45rem;
+    }
+
+    .score-field {
+        gap: 0.3rem;
+        font-size: 0.9rem;
+    }
+
+    .score-field input {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1rem;
+    }
+
+    .enviar {
+        height: 1.75rem;
+    }
+}

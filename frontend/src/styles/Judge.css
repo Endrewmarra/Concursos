@@ -1,0 +1,15 @@
+.judge-page {
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+@media (max-width: 420px) {
+    .judge-page {
+        padding: 0.5rem;
+    }
+}

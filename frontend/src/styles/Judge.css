@@ -7,6 +7,14 @@
     padding: 1rem;
     overflow: hidden;
 }
+.message{
+    background-color: #ffffff93;
+    display:inline-block;
+    font-size: 3rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    padding:0.5rem;
+}
 
 @media (max-width: 420px) {
     .judge-page {

@@ -2,30 +2,30 @@ import { CircleChevronLeft, CircleChevronRight } from 'lucide-react';
 import { useState } from 'react';
 import '../Styles/Slider.css';
 
-type ReferenceImage = {
+type referenceImage = {
     src: string;
     alt: string;
 };
 
 type SliderProps = {
-    data: ReferenceImage[];
+    referenceImages: referenceImage[];
 };
 
-const Slider = ({ data }: SliderProps) => {
+const Slider = ({ referenceImages }: SliderProps) => {
     const [slide, setSlide] = useState(0);
 
     const nextSlide = () => {
-        setSlide(slide === data.length - 1 ? 0 : slide + 1);
+        setSlide(slide === referenceImages.length - 1 ? 0 : slide + 1);
     };
 
     const prevSlide = () => {
-        setSlide(slide === 0 ? data.length - 1 : slide - 1);
+        setSlide(slide === 0 ? referenceImages.length - 1 : slide - 1);
     };
     return (
         <figure className="slider">
             <CircleChevronLeft className="arrow left" onClick={prevSlide} />
 
-            {data.map((item, index: number) => {
+            {referenceImages.map((item, index: number) => {
                 return (
                     <img
                         src={item.src}
@@ -37,7 +37,7 @@ const Slider = ({ data }: SliderProps) => {
             })}
             <CircleChevronRight className="arrow right" onClick={nextSlide} />
             <span className="indicators">
-                {data.map((_, index: number) => {
+                {referenceImages.map((_, index: number) => {
                     return (
                         <button
                             key={index}

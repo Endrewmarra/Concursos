@@ -1,13 +1,20 @@
 import '../Styles/Card.css';
 import ScoreSection from '../components/ScoreSection';
 import Slider from '../components/Slider';
-import { character, from, name, referenceImages } from '../data/mock-candidate.json';
 
-const Card = () => {
+
+interface CardProps{
+    name: string;
+    character: string;
+    origin: string;
+    referenceImages: Array<{ src: string; alt: string }>;
+}
+
+const Card = (Props: CardProps) => {
     return (
         <section id="card" aria-label="Avaliacao do candidato">
-            <Slider data={referenceImages} />
-            <ScoreSection name={name} character={character} from={from} />
+            <Slider referenceImages={Props.referenceImages} />
+            <ScoreSection name={Props.name} character={Props.character} from={Props.origin} />
         </section>
     );
 };

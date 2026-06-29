@@ -1,0 +1,86 @@
+[
+    {
+        "name": "Endrew Marra Pedrosa",
+        "character": "Edward Elric",
+        "origin": "Fullmetal Alchemist",
+        "referenceImages": [
+            {
+                "src": "https://picsum.photos/seed/edward1/1280/720",
+                "alt": "Referência 1 do personagem Edward Elric"
+            },
+            {
+                "src": "https://picsum.photos/seed/edward2/1920/1080",
+                "alt": "Referência 2 do personagem Edward Elric"
+            },
+            {
+                "src": "https://picsum.photos/seed/edward3/1000/500",
+                "alt": "Referência 3 do personagem Edward Elric"
+            }
+        ]
+    },
+    {
+        "name": "Mariana Silva",
+        "character": "Sailor Moon",
+        "origin": "Sailor Moon",
+        "referenceImages": [
+            {
+                "src": "https://picsum.photos/seed/sailor1/1600/900",
+                "alt": "Referência 1 da personagem Sailor Moon"
+            },
+            {
+                "src": "https://picsum.photos/seed/sailor2/1080/1080",
+                "alt": "Referência 2 da personagem Sailor Moon"
+            },
+            {
+                "src": "https://picsum.photos/seed/sailor3/2560/1440",
+                "alt": "Referência 3 da personagem Sailor Moon"
+            },
+            {
+                "src": "https://picsum.photos/seed/sailor4/1200/800",
+                "alt": "Referência 4 da personagem Sailor Moon"
+            }
+        ]
+    },
+    {
+        "name": "Lucas Andrade",
+        "character": "Tanjiro Kamado",
+        "origin": "Demon Slayer",
+        "referenceImages": [
+            {
+                "src": "https://picsum.photos/seed/tanjiro1/1280/720",
+                "alt": "Referência 1 do personagem Tanjiro Kamado"
+            },
+            {
+                "src": "https://picsum.photos/seed/tanjiro2/3840/2160",
+                "alt": "Referência 2 do personagem Tanjiro Kamado"
+            }
+        ]
+    },
+    {
+        "name": "Beatriz Oliveira",
+        "character": "Jinx",
+        "origin": "Arcane",
+        "referenceImages": [
+            {
+                "src": "https://picsum.photos/seed/jinx1/1920/1080",
+                "alt": "Referência 1 da personagem Jinx"
+            },
+            {
+                "src": "https://picsum.photos/seed/jinx2/1366/768",
+                "alt": "Referência 2 da personagem Jinx"
+            },
+            {
+                "src": "https://picsum.photos/seed/jinx3/2560/1080",
+                "alt": "Referência 3 da personagem Jinx"
+            },
+            {
+                "src": "https://picsum.photos/seed/jinx4/800/1200",
+                "alt": "Referência 4 da personagem Jinx"
+            },
+            {
+                "src": "https://picsum.photos/seed/jinx5/1440/900",
+                "alt": "Referência 5 da personagem Jinx"
+            }
+        ]
+    }
+]

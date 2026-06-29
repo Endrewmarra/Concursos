@@ -1,5 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from .routes import candidates
+
 
 description = """
 API backend do projeto **Cosplay Score System**.
@@ -26,6 +28,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+app.include_router(candidates.router)
+
 @app.get("/")
 async def root():
     return {"message": "Hello World" }
+
+

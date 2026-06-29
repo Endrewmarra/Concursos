@@ -6,23 +6,23 @@ Este documento apresenta o planejamento de evolução do projeto.
 
 # Versão 0.1 - Organização inicial
 
-- [x] Levantamento inicial da ideia
-- [x] Reunião com stakeholder
-- [x] Definição das regras do concurso
-- [x] Modelagem inicial do banco
-- [x] Criação do banco MySQL
-- [x] Criação do repositório
-- [x] Organização inicial das pastas
-- [x] Criação da documentação inicial
+- [X] Levantamento inicial da ideia
+- [X] Reunião com stakeholder
+- [X] Definição das regras do concurso
+- [X] Modelagem inicial do banco
+- [X] Criação do banco MySQL
+- [X] Criação do repositório
+- [X] Organização inicial das pastas
+- [X] Criação da documentação inicial
 
 ---
 
 # Versão 0.2 - Protótipo de interface
 
-- [x] Tela de login
-- [x] Tela do jurado
-- [x] Tela inicial do administrador
-- [x] Consumo de dados mockados via JSON
+- [X] Tela de login
+- [X] Tela do jurado
+- [X] Tela inicial do administrador
+- [X] Consumo de dados mockados via JSON
 - [ ] Tela de cadastro de candidatos
 - [ ] Tela de seleção de candidatos
 - [ ] Tela de detalhes do candidato
@@ -32,12 +32,12 @@ Este documento apresenta o planejamento de evolução do projeto.
 
 # Versão 0.3 - Backend inicial
 
-- [ ] Configuração do ambiente Python
-- [ ] Criação do projeto FastAPI
+- [X] Configuração do ambiente Python
+- [X] Criação do projeto FastAPI
 - [ ] Conexão com MySQL
-- [ ] Criação das primeiras rotas
+- [X] Criação das primeiras rotas
 - [ ] Rota de login
-- [ ] Rota de candidatos
+- [X] Rota de candidatos
 - [ ] Rota de jurados
 - [ ] Rota de notas
 - [ ] Rota de classificação
@@ -100,3 +100,4 @@ Este documento apresenta o planejamento de evolução do projeto.
 - [ ] Relatórios exportáveis
 - [ ] Painel público de resultados
 - [ ] Múltiplos eventos simultâneos
+

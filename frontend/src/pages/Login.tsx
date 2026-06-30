@@ -1,6 +1,6 @@
 import '../Styles/Login.css';
 const Login = () => {
-    async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    async function handleSubmit(e: React.SubmitEvent<HTMLFormElement>) {
         e.preventDefault();
 
         const form = e.currentTarget;
@@ -18,14 +18,15 @@ const Login = () => {
         });
         const data = await response.json();
 
-
-        if (!response.ok) {return alert('Login ou senha incorretos!')}
+        if (!response.ok) {
+            return alert('Login ou senha incorretos!');
+        }
         console.log('Login successful:', data);
         if (data.user.role === 'Admin') {
-                window.location.href = '/adm';
-        };
-        if (data.user.role === 'Judge'){
-                window.location.href = '/judge';
+            window.location.href = '/adm';
+        }
+        if (data.user.role === 'Judge') {
+            window.location.href = '/judge';
         }
     }
     return (

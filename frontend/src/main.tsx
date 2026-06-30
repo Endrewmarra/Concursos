@@ -1,9 +1,9 @@
 import { StrictMode, type ReactElement } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import Adm from './Pages/Adm.tsx'
-import Judge from './Pages/Judge.tsx'
-import Login from './Pages/Login.tsx'
+import Adm from './pages/Adm.tsx'
+import Judge from './pages/Judge.tsx'
+import Login from './pages/Login.tsx'
 
 const routes: Record<string, ReactElement> = {
   '/': <Login />,

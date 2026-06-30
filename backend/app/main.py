@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from .routes import candidates
+from .routes import candidates, auth
 
 
 description = """
@@ -29,6 +29,7 @@ app.add_middleware(
 )
 
 app.include_router(candidates.router)
+app.include_router(auth.router)
 
 @app.get("/")
 async def root():

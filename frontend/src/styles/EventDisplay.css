@@ -1,0 +1,21 @@
+.event{
+    width: calc(100% - 2rem);
+    height: calc(50% - 2rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff8c;
+    border-radius: 0.5rem;
+    margin:1rem
+}
+
+#init{
+    position: absolute;
+    top: 2rem;
+    left:2rem;
+}
+#next{
+    position: absolute;
+    bottom:calc(50% + 2rem);
+}
+

@@ -3,9 +3,11 @@ import Card from '../components/Card';
 import { useCandidates } from '../hooks/useCandidates';
 
 export default function Judge() {
+    // separa os dados do useCandidates
     const { candidates, loading, error } = useCandidates();
-    const currentCandidate = candidates[2];
+    const currentCandidate = candidates[0];
 
+    //renderiza a pagina do jurado apenas se os dados chegarem pelo hook useCandidates
     if (loading) {
         return (
             <main className="judge-page">

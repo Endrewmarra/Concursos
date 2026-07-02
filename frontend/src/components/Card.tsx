@@ -3,6 +3,7 @@ import ScoreSection from '../components/ScoreSection';
 import Slider from '../components/Slider';
 
 
+// define os parâmetros do componente
 interface CardProps{
     name: string;
     character: string;
@@ -12,7 +13,7 @@ interface CardProps{
 
 const Card = (Props: CardProps) => {
     return (
-        <section id="card" aria-label="Avaliacao do candidato">
+        <section id="card" aria-label="Avaliação do candidato">
             <Slider referenceImages={Props.referenceImages} />
             <ScoreSection name={Props.name} character={Props.character} from={Props.origin} />
         </section>

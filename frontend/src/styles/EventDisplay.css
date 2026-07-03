@@ -1,4 +1,4 @@
-.event{
+.event {
     width: calc(100% - 2rem);
     height: calc(50% - 2rem);
     display: flex;
@@ -6,16 +6,15 @@
     justify-content: center;
     background-color: #ffffff8c;
     border-radius: 0.5rem;
-    margin:1rem
+    margin: 1rem;
 }
 
-#init{
+#init {
     position: absolute;
     top: 2rem;
-    left:2rem;
+    left: 2rem;
 }
-#next{
+#next {
     position: absolute;
-    bottom:calc(50% + 2rem);
+    bottom: calc(50% + 2rem);
 }
-

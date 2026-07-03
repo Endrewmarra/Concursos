@@ -18,6 +18,9 @@ dist-ssr/
 .env.*
 !.env.example
 
+# Local mock credentials
+backend/app/mock/users.json
+
 # VSCode
 .vscode/*
 !.vscode/extensions.json

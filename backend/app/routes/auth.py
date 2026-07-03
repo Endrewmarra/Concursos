@@ -2,6 +2,8 @@ from pathlib import Path
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 from pwdlib import PasswordHash
+from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+from jwt.exceptions import InvalidTokenError
 import json
 
 password_hash = PasswordHash.recommended()
@@ -11,6 +13,8 @@ router = APIRouter(prefix="/auth", tags=["auth"])
 class LoginRequest(BaseModel):
     login: str
     password: str
+
+
 
 BASE_DIR:Path = Path(__file__).resolve().parent.parent
 USERS:Path = BASE_DIR / "mock" / "users.json"

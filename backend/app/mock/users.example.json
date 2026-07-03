@@ -1,0 +1,27 @@
+[
+    {
+        "login": "admin",
+        "password": "PAST_YOUR_HASH",
+        "role": "Admin"
+    },
+    {
+        "login": "jurado1",
+        "password": "PAST_YOUR_HASH",
+        "role": "Judge"
+    },
+    {
+        "login": "jurado2",
+        "password": "PAST_YOUR_HASH",
+        "role": "Judge"
+    },
+    {
+        "login": "jurado3",
+        "password": "PAST_YOUR_HASH",
+        "role": "Judge"
+    },
+    {
+        "login": "jurado4",
+        "password": "PAST_YOUR_HASH",
+        "role": "Judge"
+    }
+]

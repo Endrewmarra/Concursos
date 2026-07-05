@@ -13,6 +13,7 @@
         "brazilian",
         "CODESPELLING",
         "dbaeumer",
+        "dotenv",
         "esbenp",
         "FastAPI",
         "kohler",
@@ -20,10 +21,11 @@
         "npm",
         "oderwat",
         "Prettier",
+        "pwdlib",
         "React",
         "tsx",
-        "Vite",
         "vercel",
+        "Vite",
         "yoavbls"
     ],
 

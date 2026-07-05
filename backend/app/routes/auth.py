@@ -1,12 +1,12 @@
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, Depends, status
 from pydantic import BaseModel
 from pwdlib import PasswordHash
 from fastapi.security import OAuth2PasswordBearer
 from jwt.exceptions import InvalidTokenError
 from dotenv import load_dotenv
-from typing import Optional
+from typing import Optional, Annotated
 import jwt
 import os
 import json
@@ -59,6 +59,33 @@ def create_access_token(data: dict, expires_delta:  Optional[timedelta] = None)-
     encode_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm = ALGORITHM)
     return encode_jwt
 
+async def get_current_user(token: Annotated[str, Depends(oauth2_scheme)]):
+    credentials_exception = HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail="Could not validate credentials",
+        headers={"WWW-Authenticate": "Bearer"},
+    )
+
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        login = payload.get("sub")
+
+        if login is None:
+            raise credentials_exception
+
+    except InvalidTokenError:
+        raise credentials_exception
+
+    users = load_users()
+
+    for user in users:
+
+        if user["login"] == login:
+
+            return {
+                "login": user["login"],
+                "role": user["role"]
+            }
 
 
 
@@ -86,4 +113,6 @@ async def login_user(login_data: LoginRequest):
             }
     raise HTTPException(status_code=401, detail="Invalid login or password")
 
-@router.get('/me/')
+@router.get("/me/")
+async def read_current_user(current_user = Depends(get_current_user)):
+    return current_user
